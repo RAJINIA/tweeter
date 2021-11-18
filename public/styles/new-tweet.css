@@ -11,6 +11,17 @@
   flex-direction: column;
 }
 
+.error__empty, .error__long {
+  color: red;
+  border: 1px solid red;
+  display: none;
+  width: 95%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  font-size: 25px;
+}
+
 textarea {
   width: 95%;
   height: 50px;

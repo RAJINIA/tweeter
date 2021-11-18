@@ -72,7 +72,18 @@
     <main>
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        
         <form class="tweet__input" action = "/tweets" method="POST" id="tweet__id">
+          <p for="validation" class="error__empty">
+            <i class="fas fa-exclamation-triangle"></i> 
+              Empty Tweet Message! 
+            <i class="fas fa-exclamation-triangle"></i>
+          </p>
+          <p for="validation" class="error__long">
+            <i class="fas fa-exclamation-triangle"></i> 
+              Tweet Exceeding The Maximum Characters! 
+            <i class="fas fa-exclamation-triangle"></i>
+          </p>
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text" ></textarea>
           <div class="tweet__button">

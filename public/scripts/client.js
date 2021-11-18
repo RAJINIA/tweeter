@@ -78,7 +78,6 @@ const loadTweets = function () {
   });
 }
 
-
 $( "#tweet__id" ).on('submit', (event) => {
   event.preventDefault();
   // console.log("hello");
@@ -87,9 +86,11 @@ $( "#tweet__id" ).on('submit', (event) => {
   // console.log(formData);
   let textLength = $('#tweet-text').val().length;
   if( textLength === 0) {
-    alert("Empty Tweet Message!");
+    $('.error__empty').slideDown('slow').hide(3500);
+    // alert("Empty Tweet Message!");
   } else if(textLength > 140) {
-    alert("Tweet Exceeding The Maximum Characters!");
+    $('.error__long').slideDown('slow').hide(3500);
+    // alert("Tweet Exceeding The Maximum Characters!");
   } else {
     $.ajax({
       type: "POST",
