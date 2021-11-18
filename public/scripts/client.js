@@ -85,13 +85,11 @@ $( "#tweet__id" ).on('submit', (event) => {
   const formData = $( 'form' ).serialize();
   // console.log(this);
   // console.log(formData);
-  // let textLength = $('tweet-text').val().length;
-  if( $form.find('#tweet-text').val().length === 0) {
-    $(".errorShort").fadeIn('slow')
-    // alert("Empty tweet Message!");
-  } else if($form.find('#tweet-text').val().length > 140) {
-    $(".errorLong").fadeIn('slow')
-    // alert("Tweet Exceeding The Maximum Characters!");
+  let textLength = $('#tweet-text').val().length;
+  if( textLength === 0) {
+    alert("Empty Tweet Message!");
+  } else if(textLength > 140) {
+    alert("Tweet Exceeding The Maximum Characters!");
   } else {
     $.ajax({
       type: "POST",
