@@ -18,7 +18,60 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif; 
 }
+
+.main__container {
+  font-family: sans-serif;
+  padding-left: 1em;
+  width: 100%;
+  font-family: 'Bungee', cursive;
+}
+
+.tweet__container {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.tweet__input{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  border: 0;
+  height: 100px;
+  outline: none;
+  width: 100%;
+}
+
+.line {
+  border-bottom: 2px solid black;
+  width: 100%;
+  padding-top: 1em;
+
+}
+
+.button {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;  
+}
+
+#tweet__button {
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: "Bungee";
+}
+
+
+
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
