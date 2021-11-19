@@ -1,3 +1,25 @@
+
+
+.header__info {
+  width: 100%;
+  padding-left: 1em;
+  /* padding-top: 1.5em; */
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.avatar {
+  padding-top: 1em;
+}
+
+.main__container {
+  padding-top: 6.5em;
+  width: 100%;
+
+}
+
 .new-tweet {
   /* background-color: yellow; */
   font-family: 'Source Sans Pro', sans-serif; 
@@ -9,6 +31,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  height: 10%;
 }
 
 .error__empty, .error__long {
@@ -19,18 +42,24 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 1em;
-  font-size: 25px;
+  font-size: 18px;
+}
+
+/* .tweet-text {
+  padding-top: 1em;
+} */
+
+.tweet-text {
+  font-size: 21px;
 }
 
 textarea {
   width: 95%;
-  height: 50px;
-  /* margin-left: 1em;
-  margin-right: 1em; */
+  height: 5px;
   padding: 12px 20px;
   border: 2px red;
   background-color: inherit;
-  font-size: 25px;
+  font-size: 21px;
   border-bottom: 2px solid black;
 }
 
@@ -46,7 +75,7 @@ label [for=tweet-text] {
   justify-content: space-between;
   padding-left: 1em;
   padding-right: 3em;
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 
 button {
@@ -65,11 +94,12 @@ article.tweet {
   /* background-color: cyan; */
   padding-top: 10px;
   padding-bottom: 10px;
+  height: 25%;
 }
 
-/* article.tweet:hover {
+article.tweet:hover {
   background-color: #BADA55;
-} */
+}
 
 article.tweet header {
   /* height: 100px; */
@@ -79,7 +109,8 @@ article.tweet header {
   /* background-color: green;   */
   color: gray;
   padding-left: 1em;
-  padding-right: 1em;;
+  padding-right: 1em;
+  /* padding-top: 0.3em; */
 }
 
 /* article.tweet header.nameandimage {
@@ -101,9 +132,11 @@ article.tweet footer {
 article.tweet h3 {
   padding-right: 1em;
   padding-left: 1em;
+  padding-bottom: 0.8em;
   margin-left: 0.5em;
   margin-right: 0.5em;
   border-bottom: 2px solid black;
+  font-size: 21px;
 }
 
 article.tweet .username {
@@ -138,6 +171,29 @@ article.tweet img {
 
 article.tweet .imgandname {
   display: flex;
+  justify-content: space-between;
 }
 
+@media only screen and (min-width: 768px) {
+
+  .container {
+    display: flex;
+  }
+
+  .header__info {
+    flex-basis: 50%;
+    margin-top: 140px;
+    margin-left: 10px;
+  }
+
+  .main__container {
+    flex-basis: 50%;
+  }
+
+  nav{
+    background-color: #007fba;
+    background-image: none;
+  }
+
+}
 
