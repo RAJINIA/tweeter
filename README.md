@@ -6,10 +6,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 
 ## Final Product
-!["Home Page"](https://github.com/RAJINIA/tweeter/blob/master/public/images/HomePage.png)
-!["Character Count Page"](https://github.com/RAJINIA/tweeter/blob/master/public/images/Character%20Count.png)
-!["Character Count Error Page"](https://github.com/RAJINIA/tweeter/blob/master/public/images/CharacterCount%20Error.png)
-!["Responsive Design Page"](https://github.com/RAJINIA/tweeter/blob/master/public/images/Responsive%20Design.png)
+!["Home Page"](https://github.com/RAJINIA/tweeter/blob/af1fbfd03ed8fbd3098b4402d9aa75f37936268e/docs/HomePage.png)
+!["Character Count Page"](https://github.com/RAJINIA/tweeter/blob/af1fbfd03ed8fbd3098b4402d9aa75f37936268e/docs/Character%20Count.png)
+!["Character Count Error Page"](https://github.com/RAJINIA/tweeter/blob/af1fbfd03ed8fbd3098b4402d9aa75f37936268e/docs/CharacterCount%20Error.png)
+!["Responsive Design Page"](https://github.com/RAJINIA/tweeter/blob/af1fbfd03ed8fbd3098b4402d9aa75f37936268e/docs/Responsive%20Design.png)
 
 ## Dependencies
 
