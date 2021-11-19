@@ -132,11 +132,9 @@ article.tweet footer {
 article.tweet h3 {
   padding-right: 1em;
   padding-left: 1em;
-  padding-bottom: 0.8em;
   margin-left: 0.5em;
   margin-right: 0.5em;
   border-bottom: 2px solid black;
-  font-size: 21px;
 }
 
 article.tweet .username {
