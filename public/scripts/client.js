@@ -9,30 +9,6 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 
 
-// const tweetData = [
-//   {
-//     "user": {
-//       "name": "Newton",
-//       "avatars": "https://i.imgur.com/73hZDYK.png",
-//       "handle": "@SirIsaac"
-//     },
-//     "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1637017216171
-//   },
-//   {
-//     "user": {
-//       "name": "Descartes",
-//       "avatars": "https://i.imgur.com/nlhLi3I.png",
-//       "handle": "@rd"
-//     },
-//     "content": {
-//       "text": "Je pense , donc je suis"
-//     },
-//     "created_at": 1637103616171
-//   }
-// ]
 
 $(document).ready(function() {
 const createTweetElement = function(tweet) {
@@ -69,28 +45,30 @@ const renderTweets = function(tweets) {
 }
 
 const loadTweets = function () {
+  // $("#tweet-text").val('');        jquery to empty textarea
+  // $(".counter").text(140);         jquery to reset charactercount
+
   $.ajax({
   url: `/tweets`,
   method: 'GET',
   })
   .then(function (tweetresponse){
   renderTweets(tweetresponse);
+  document.querySelector("#tweet-text").value = '';       //empty textarea
+  document.querySelector(".counter").innerHTML = 140;     //reset charactercount
+
   });
+  
 }
 
 $( "#tweet__id" ).on('submit', (event) => {
   event.preventDefault();
-  // console.log("hello");
   const formData = $( 'form' ).serialize();
-  // console.log(this);
-  // console.log(formData);
   let textLength = $('#tweet-text').val().length;
   if( textLength === 0) {
     $('.error__empty').slideDown('slow').hide(3500);
-    // alert("Empty Tweet Message!");
   } else if(textLength > 140) {
     $('.error__long').slideDown('slow').hide(3500);
-    // alert("Tweet Exceeding The Maximum Characters!");
   } else {
     $.ajax({
       type: "POST",
@@ -114,12 +92,7 @@ loadTweets();
 
 
 
-// $(document).ready(function() {
-  // const $tweet = createTweetElement(tweetData);
-  // renderTweets(tweetData);
-  // console.log($tweet); // to see what it looks like
-  // $('#tweets-container').append($tweet);             // to add it to the page so we can make sure it's got all the right elements, classes, etc.
-//  });
+
 
 
 

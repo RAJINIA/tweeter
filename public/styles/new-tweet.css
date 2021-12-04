@@ -3,7 +3,6 @@
 .header__info {
   width: 100%;
   padding-left: 1em;
-  /* padding-top: 1.5em; */
   padding-right: 1em;
   display: flex;
   flex-direction: column;
@@ -17,11 +16,10 @@
 .main__container {
   padding-top: 6.5em;
   width: 100%;
-
 }
 
 .new-tweet {
-  /* background-color: yellow; */
+  box-shadow: 10px 10px;
   font-family: 'Source Sans Pro', sans-serif; 
   padding-left: 1em;
   width: 100%;
@@ -45,17 +43,13 @@
   font-size: 18px;
 }
 
-/* .tweet-text {
-  padding-top: 1em;
-} */
-
 .tweet-text {
   font-size: 21px;
 }
 
 textarea {
+  height: 50px;
   width: 95%;
-  height: 5px;
   padding: 12px 20px;
   border: 2px red;
   background-color: inherit;
@@ -68,7 +62,6 @@ label [for=tweet-text] {
 }
 
 .tweet__button {
-  /* background-color: yellow; */
   font-family: "Bungee";
   width: 100%;
   display: flex;
@@ -81,8 +74,6 @@ label [for=tweet-text] {
 button {
   background-color: blue;
   color: white;
-  /* padding-top: 1em; */
-  /* padding-bottom: 1em; */
   margin-bottom: 1em;
   border: none;
 }
@@ -91,38 +82,31 @@ article.tweet {
   border: 2px solid black;
   width: 95%;
   margin-top: 1em;
-  /* background-color: cyan; */
   padding-top: 10px;
   padding-bottom: 10px;
   height: 25%;
 }
 
 article.tweet:hover {
-  background-color: #BADA55;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 50%);
+  transition: 250ms;
 }
 
 article.tweet header {
-  /* height: 100px; */
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* background-color: green;   */
   color: gray;
   padding-left: 1em;
   padding-right: 1em;
   /* padding-top: 0.3em; */
 }
 
-/* article.tweet header.nameandimage {
-  display: flex;
-} */
-
 article.tweet footer {
   height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* background-color: red; */
   color: gray;
   padding-left: 1em;
   padding-right: 1em;
@@ -189,9 +173,8 @@ article.tweet .imgandname {
   }
 
   nav{
-    background-color: #007fba;
+    background-color: #4056A1;
     background-image: none;
   }
-
 }
 
