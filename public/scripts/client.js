@@ -35,8 +35,7 @@ const createTweetElement = function(tweet) {
 }
 
 
-const renderTweets = function(tweets) {
-  
+const renderTweets = function(tweets) {         // Render tweet value
   for (const tweet of tweets) {
     console.log(tweet)
     const newTweet = createTweetElement(tweet);
@@ -44,7 +43,7 @@ const renderTweets = function(tweets) {
   }
 }
 
-const loadTweets = function () {
+const loadTweets = function () {      // To Load Tweets
   // $("#tweet-text").val('');        jquery to empty textarea
   // $(".counter").text(140);         jquery to reset charactercount
 
@@ -65,7 +64,7 @@ $( "#tweet__id" ).on('submit', (event) => {
   event.preventDefault();
   const formData = $( 'form' ).serialize();
   let textLength = $('#tweet-text').val().length;
-  if( textLength === 0) {
+  if( textLength === 0) {                             // Alert user with character count
     $('.error__empty').slideDown('slow').hide(3500);
   } else if(textLength > 140) {
     $('.error__long').slideDown('slow').hide(3500);

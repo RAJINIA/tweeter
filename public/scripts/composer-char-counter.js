@@ -1,3 +1,4 @@
+// Calculate The Character Count
 
 $(document).ready(function() {
   $("#tweet-text").keyup(function() {
